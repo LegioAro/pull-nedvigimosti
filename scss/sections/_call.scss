@@ -1,0 +1,142 @@
+.call {
+  padding-bottom: 108px;
+  background-image: url(../img/call/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+
+  &__wrapper {
+    padding-bottom: 366px;
+    position: relative;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    padding: 26px 36px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0.03em;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(90deg, #ffffff 0%, rgba(217, 217, 217, 0) 100%);
+      opacity: 0.05;
+    }
+    p {
+      font-weight: 300;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  &__img {
+    position: absolute;
+    width: 1236px;
+    bottom: 0;
+    left: 98px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .call {
+    &__img {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .call {
+    &__wrapper {
+      padding-bottom: 200px;
+    }
+    &__img {
+      width: 1000px;
+      left: auto;
+      right: -170px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .call {
+    &__img {
+      width: 800px;
+      right: -130px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .call {
+    &__wrapper {
+      padding-bottom: 0px;
+    }
+    &__img {
+      width: 550px;
+      right: -100px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .call {
+    &__img {
+      width: 400px;
+      right: -60px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .call {
+    &__img {
+      display: none;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__desc {
+      &::before {
+        background-image: linear-gradient(180deg, #ffffff 0%, rgba(217, 217, 217, 0) 100%);
+      }
+    }
+  }
+}

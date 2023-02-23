@@ -1,0 +1,28 @@
+//Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+
+//Moduls
+@import './moduls/btn';
+@import './moduls/title';
+@import './moduls/subtitle';
+@import './moduls/list';
+@import './moduls/desc';
+
+//Sections
+@import './sections/header';
+@import './sections/conditions';
+@import './sections/how';
+@import './sections/why';
+@import './sections/partner';
+@import './sections/about';
+@import './sections/projects';
+@import './sections/financing-project';
+@import './sections/profit';
+@import './sections/advantages';
+@import './sections/financing';
+@import './sections/guarantees';
+@import './sections/call';
+@import './sections/footer';

@@ -1,0 +1,18 @@
+.title {
+  font-family: var(--font-text-2);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,18 @@
+.subtitle {
+  font-family: var(--font-text-2);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 125%;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}

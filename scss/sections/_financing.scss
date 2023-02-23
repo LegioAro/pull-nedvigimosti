@@ -1,0 +1,32 @@
+.financing {
+  margin-bottom: 150px;
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    text-align: left;
+    max-width: 572px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .financing {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .financing {
+    margin-bottom: 70px;
+  }
+}

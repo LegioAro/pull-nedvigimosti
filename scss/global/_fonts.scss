@@ -1,0 +1,83 @@
+// font-family: 'RobotoCondensed',sans-serif;
+// font-family: 'PTSerif';
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/roboto_condensed_light.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/roboto_condensed_light.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/roboto_condensed_light.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/roboto_condensed_light.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/roboto_condensed_light.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/roboto_condensed_light.svg#roboto_condensed_light')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/robotocondensed-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/robotocondensed-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/robotocondensed-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/robotocondensed-regular.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/robotocondensed-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/robotocondensed-regular.svg#robotocondensed-regular')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/roboto_condensed.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/roboto_condensed.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/roboto_condensed.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/roboto_condensed.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/roboto_condensed.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/roboto_condensed.svg#roboto_condensed') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/roboto_condensed_bold.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/roboto_condensed_bold.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/roboto_condensed_bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/roboto_condensed_bold.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/roboto_condensed_bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/roboto_condensed_bold.svg#roboto_condensed_bold')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../fonts/ptserif-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/ptserif-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/ptserif-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/ptserif-regular.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/ptserif-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/ptserif-regular.svg#ptserif-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../fonts/ptserif-bold.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/ptserif-bold.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/ptserif-bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/ptserif-bold.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/ptserif-bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/ptserif-bold.svg#ptserif-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}

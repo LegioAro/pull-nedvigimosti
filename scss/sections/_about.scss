@@ -1,0 +1,32 @@
+.about {
+  margin-bottom: 80px;
+  &__wrapper {
+    background-color: #0f0f0f;
+    padding: 95px 100px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 1100px) {
+  .about {
+    &__wrapper {
+      padding: 70px 40px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .about {
+    &__wrapper {
+      padding: 70px 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-bottom: 50px;
+  }
+}
