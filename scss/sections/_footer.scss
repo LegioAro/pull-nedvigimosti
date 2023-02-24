@@ -45,6 +45,11 @@
   &__link {
     display: flex;
     align-items: center;
+    transition: 0.3s;
+
+    &:hover {
+      color: #c0af73;
+    }
   }
 
   &__link-icon {

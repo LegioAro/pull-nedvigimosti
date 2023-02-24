@@ -126,6 +126,14 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .partner {
+    &__dec {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 850px) {
   .partner {
     &__content-imgs-block {
@@ -142,9 +150,7 @@
 @media (max-width: 768px) {
   .partner {
     margin-bottom: 50px;
-    &__dec {
-      display: none;
-    }
+
     &__img {
       margin-bottom: 50px;
     }
