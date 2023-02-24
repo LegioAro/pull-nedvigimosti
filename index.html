@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Pull-nedvigimosti</title>
   </head>
@@ -24,7 +25,9 @@
             </div>
             <div class="header__btns">
               <div class="header__btn-1">
-                <button class="btn">Узнать детали на консультации</button>
+                <button class="btn modal__btn-active" data-modal-src="modal">
+                  Узнать детали на консультации
+                </button>
               </div>
               <a href="https://youtu.be/qXg6jQ1mED8" class="header__btn" data-fslightbox="video">
                 <div class="header__btn-icon"><img src="img/icon/play.svg" alt="" /></div>
@@ -77,7 +80,11 @@
           <div class="how__info">
             <div class="how__info-icon --select">?</div>
             <div class="how__info-title"><div class="title">Как это работает?</div></div>
-            <div class="how__info-btn"><button class="btn">Получить консультацию</button></div>
+            <div class="how__info-btn">
+              <button class="btn modal__btn-active" data-modal-src="modal">
+                Получить консультацию
+              </button>
+            </div>
           </div>
           <div class="how__content">
             <div class="list">
@@ -447,7 +454,9 @@
               </div>
             </div>
             <div class="financing-project__btn">
-              <button class="btn">Получить консультацию</button>
+              <button class="btn modal__btn-active" data-modal-src="modal">
+                Получить консультацию
+              </button>
             </div>
           </section>
         </div>
@@ -498,7 +507,11 @@
               </p>
             </div>
           </div>
-          <div class="profit__btn"><button class="btn">Получить консультацию</button></div>
+          <div class="profit__btn">
+            <button class="btn modal__btn-active" data-modal-src="modal">
+              Получить консультацию
+            </button>
+          </div>
         </div>
       </div>
       <div class="profit__dec"><img src="img/profit/dec.png" alt="" /></div>
@@ -525,7 +538,11 @@
                 Запишитесь на консультацию, чтобы узнать более детально о выгодах такой инвестиции
               </p>
             </div>
-            <div class="advantages__btn"><button class="btn">Получить консультацию</button></div>
+            <div class="advantages__btn">
+              <button class="btn modal__btn-active" data-modal-src="modal">
+                Получить консультацию
+              </button>
+            </div>
           </div>
           <div class="advantages__items">
             <div class="advantages__item">
@@ -580,10 +597,7 @@
                   </div>
                   <div class="list__item">
                     <div class="list__item-dec"></div>
-                    <div class="list__item-text">
-                      Покупаете токены ENOTE на сумму от 50 USDT (сумма должна быть кратной 50 USDT
-                      — стоимость одного токена)
-                    </div>
+                    <div class="list__item-text">Покупаете токены ENOTE на сумму от 1 USDT</div>
                   </div>
                   <div class="list__item">
                     <div class="list__item-dec"></div>
@@ -702,7 +716,11 @@
                 неизменно
               </p>
             </div>
-            <div class="call__btn"><button class="btn">Попасть на консультацию</button></div>
+            <div class="call__btn">
+              <button class="btn modal__btn-active" data-modal-src="modal">
+                Попасть на консультацию
+              </button>
+            </div>
           </div>
           <div class="call__img"><img src="img/call/img.png" alt="" /></div>
         </div>
@@ -752,8 +770,76 @@
       </div>
     </footer>
 
+    <div class="modal__wrapper" data-modal-window="modal">
+      <div class="modal__content">
+        <div class="modal__btn-close">
+          <button class="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <form id="form" class="form" action="" method="post">
+          <div class="form__title">Запишитесь на консультацию</div>
+          <div class="form__text">и получите ответы на все вопросы по проекту</div>
+          <div class="form__inputs">
+            <div class="form__input-block">
+              <input
+                type="text"
+                required
+                placeholder="Имя"
+                name="name"
+                value=""
+                class="form__input val val-name"
+              />
+              <div class="form__input-text">Не правильно введено Имя</div>
+            </div>
+            <div class="form__input-block">
+              <input
+                type="text"
+                required
+                placeholder="Email"
+                name="email"
+                value=""
+                class="form__input val val-email"
+              />
+              <div class="form__input-text">Не правильно введен Email</div>
+            </div>
+            <div class="form__input-block">
+              <input
+                type="tel"
+                required
+                placeholder=""
+                name="phone"
+                value=""
+                class="form__input"
+                id="phone"
+              />
+              <div class="form__input-text" id="error-msg"></div>
+            </div>
+            <div class="form__input-block">
+              <input
+                type="text"
+                required
+                placeholder="Ник в Telegram"
+                name="telegram"
+                value=""
+                class="form__input val val-telegram"
+              />
+              <div class="form__input-text">Не правильно введен Ник телеграмм</div>
+            </div>
+          </div>
+          <div class="form__btn"><button class="btn">Получить консультацию</button></div>
+        </form>
+      </div>
+    </div>
+
     <script src="js/fslightbox.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/form-validation.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

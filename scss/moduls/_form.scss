@@ -1,0 +1,103 @@
+.form {
+  width: 100%;
+  max-width: 580px;
+  padding: 65px 60px 50px;
+  box-shadow: 0px 2.97436px 74.359px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  min-height: 730px;
+
+  &__title {
+    font-family: var(--font-text-2);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 145%;
+    margin-bottom: 46px;
+  }
+
+  &__inputs {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  &__input-block {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    font-family: var(--font-text);
+    font-weight: 300;
+    font-size: 14.8718px;
+    line-height: 145%;
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.74359px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 23px;
+    transition: 0.3s;
+
+    &:focus {
+      //   outline: 0.74359px solid rgba(0, 0, 0, 0.5);
+      outline: 0;
+      border: 0.74359px solid rgba(0, 0, 0, 0.5);
+    }
+
+    &::placeholder {
+      font-family: var(--font-text);
+      font-weight: 300;
+      font-size: 14.8718px;
+      line-height: 145%;
+      color: #000000;
+      opacity: 0.6;
+    }
+
+    &.novalid {
+      border: 0.74359px solid #ea3030;
+      & + .form__input-text {
+        display: block;
+      }
+    }
+  }
+
+  &__input-text {
+    font-weight: 400;
+    font-size: 14.8718px;
+    line-height: 145%;
+    color: #ea3030;
+    text-align: left;
+    position: absolute;
+    left: 24px;
+    top: calc(100% + 3px);
+    display: none;
+
+    &.novalid {
+      display: block;
+    }
+  }
+
+  &__btn {
+    .btn {
+      font-size: 20px;
+      padding: 25px 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 65px 20px 50px;
+  }
+}
