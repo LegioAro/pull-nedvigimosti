@@ -18,10 +18,12 @@
 
   &__title {
     margin-bottom: 7px;
+    transition: 0.3s;
   }
 
   &__subtitle {
     margin-bottom: 84px;
+    transition: 0.3s;
   }
 
   &__items {
@@ -34,6 +36,8 @@
   }
 
   &__item {
+    transition: 0.3s;
+
     &:nth-child(even) {
       margin-top: 100px;
     }
@@ -80,12 +84,14 @@
 
   &__desc {
     margin-bottom: 36px;
+    transition: 0.3s;
   }
 
   &__btn {
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
+    transition: 0.3s;
   }
 }
 

@@ -25,6 +25,7 @@
     position: relative;
     min-height: 74px;
     margin-bottom: 5px;
+    transition: 0.3s;
     &:last-child {
       margin-bottom: 0;
       min-height: auto;

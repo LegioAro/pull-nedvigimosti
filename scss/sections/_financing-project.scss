@@ -3,6 +3,7 @@
     margin-bottom: 41px;
     text-transform: uppercase;
     text-align: center;
+    transition: 0.3s;
   }
 
   &__videos {
@@ -14,11 +15,13 @@
 
   &__video {
     display: flex;
+    transition: 0.3s;
   }
 
   &__imgs {
     margin-bottom: 69px;
     overflow: hidden;
+    transition: 0.3s;
   }
 
   &__img {
@@ -36,6 +39,8 @@
     width: 100%;
     max-width: 756px;
     margin: 0 auto 14px;
+    transition: 0.3s;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -79,6 +84,7 @@
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
+    transition: 0.3s;
   }
 }
 

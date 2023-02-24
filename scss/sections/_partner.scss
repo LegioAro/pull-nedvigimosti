@@ -18,6 +18,7 @@
   &__img {
     display: flex;
     width: 100%;
+    transition: 0.3s;
     margin-bottom: 100px;
   }
 
@@ -40,6 +41,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    transition: 0.3s;
   }
 
   &__logo {
@@ -55,6 +57,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     text-transform: uppercase;
+    transition: 0.3s;
   }
 
   &__text {
@@ -62,6 +65,8 @@
     line-height: 165%;
     letter-spacing: 0.03em;
     margin-bottom: 42px;
+    transition: 0.3s;
+
     p {
       font-weight: 300;
       margin-bottom: 15px;
@@ -79,6 +84,7 @@
   }
 
   &__item {
+    transition: 0.3s;
   }
 
   &__item-title {
@@ -106,6 +112,8 @@
     grid-row-gap: 14px;
     align-items: flex-start;
     margin-bottom: 84px;
+    transition: 0.3s;
+
     &:last-child {
       margin-bottom: 0;
     }

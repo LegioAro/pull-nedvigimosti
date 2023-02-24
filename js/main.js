@@ -1,3 +1,4 @@
+//Sliders
 const mySwiper = new Swiper('.slider-1', {
   // Настройки Swiper
   spaceBetween: 21, // Устанавливаем отступ между слайдами
@@ -59,6 +60,7 @@ const mySwiper2 = new Swiper('.slider-2', {
   },
 });
 
+//Modal
 function isModal() {
   let modalBtns = document.querySelectorAll('.modal__btn-active');
 
@@ -77,6 +79,7 @@ function isModal() {
     }
   }
 }
+isModal();
 
 function isModalClose() {
   let modalCloseBtns = document.querySelectorAll('.modal__btn-close');
@@ -92,9 +95,30 @@ function isModalClose() {
     }
   }
 }
-isModal();
 isModalClose();
 
+//Scroll
+
+function isAnimationScroll() {
+  function onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        change.target.classList.remove('scroll-hidden');
+        change.target.classList.remove('scroll-hidden-right');
+      }
+    });
+  }
+  let options = { threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.scroll-hidden');
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+}
+
+isAnimationScroll();
+
+//Form
 const form = document.querySelector('#form');
 form.addEventListener('submit', function (e) {
   e.preventDefault();

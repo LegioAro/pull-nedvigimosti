@@ -9,9 +9,11 @@
   &__title {
     text-transform: uppercase;
     margin-bottom: 7px;
+    transition: 0.3s;
   }
 
   &__subtitle {
+    transition: 0.3s;
     margin-bottom: 26px;
   }
 
@@ -20,6 +22,7 @@
     line-height: 145%;
     text-align: center;
     letter-spacing: 0.03em;
+    transition: 0.3s;
     margin-bottom: 86px;
   }
 
@@ -34,6 +37,7 @@
   &__item {
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
     align-items: center;
   }
 

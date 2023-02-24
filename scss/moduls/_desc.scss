@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  transition: 0.3s;
 
   &::before {
     position: absolute;
