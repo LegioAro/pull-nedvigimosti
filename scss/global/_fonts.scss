@@ -81,3 +81,89 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?dutqq5');
+  src: url('../fonts/icomoon.eot?dutqq5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dutqq5') format('truetype'),
+    url('../fonts/icomoon.woff?dutqq5') format('woff'),
+    url('../fonts/icomoon.svg?dutqq5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  & span::before {
+    transition: 0.3s;
+  }
+}
+
+.icon-close-outline:before {
+  content: '\e90a';
+}
+.icon-check-circle:before {
+  content: '\e90b';
+}
+.icon-arrow_drop_down:before {
+  content: '\e909';
+}
+.icon-arrow-btn:before {
+  content: '\e900';
+  color: #f0f0f0;
+}
+.icon-arrow-converted:before {
+  content: '\e90d';
+}
+.icon-discord .path1:before {
+  content: '\e901';
+  color: rgb(240, 240, 240);
+}
+.icon-discord .path2:before {
+  content: '\e902';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-platform .path1:before {
+  content: '\e903';
+  color: rgb(240, 240, 240);
+}
+.icon-platform .path2:before {
+  content: '\e904';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-platform .path3:before {
+  content: '\e905';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-platform .path4:before {
+  content: '\e906';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-telegram .path1:before {
+  content: '\e907';
+  color: rgb(240, 240, 240);
+}
+.icon-telegram .path2:before {
+  content: '\e908';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}

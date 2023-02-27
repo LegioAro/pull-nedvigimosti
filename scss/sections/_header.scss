@@ -1,6 +1,18 @@
 .header {
   overflow: hidden;
   margin-bottom: 123px;
+  &__reg {
+    padding-bottom: 0px;
+    margin-bottom: 50px;
+
+    .header__wrapper {
+      padding-bottom: 0;
+    }
+
+    .header__logo {
+      margin-bottom: 0;
+    }
+  }
   &__wrapper {
     padding: 55px 0 353px;
     position: relative;

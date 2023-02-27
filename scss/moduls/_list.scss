@@ -1,6 +1,12 @@
 .list {
   position: relative;
 
+  &__registration {
+    .list__item {
+      padding-bottom: 15px;
+    }
+  }
+
   &__content {
     padding: 63px 49px;
     background-color: #fff;
