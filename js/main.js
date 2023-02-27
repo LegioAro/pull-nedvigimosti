@@ -6,9 +6,9 @@ const mySwiper = new Swiper('.slider-1', {
   centeredSlides: true,
   loop: true,
 
-  autoplay: {
-    delay: 3000, // Устанавливаем задержку автоматической прокрутки в 2 секунды
-  },
+  // autoplay: {
+  //   delay: 3000, // Устанавливаем задержку автоматической прокрутки в 2 секунды
+  // },
   initialSlide: 2, // Устанавливаем активным слайдом по умолчанию третий слайд
   breakpoints: {
     320: {

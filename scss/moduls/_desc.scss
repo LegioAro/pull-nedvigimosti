@@ -11,6 +11,15 @@
   position: relative;
   transition: 0.3s;
 
+  &--big {
+    p {
+      font-weight: 700;
+
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+  }
+
   &::before {
     position: absolute;
     content: '';
