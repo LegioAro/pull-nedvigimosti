@@ -1,15 +1,14 @@
 //Sliders
 const mySwiper = new Swiper('.slider-1', {
-  // Настройки Swiper
-  spaceBetween: 21, // Устанавливаем отступ между слайдами
+  spaceBetween: 21,
   slidesPerView: 5,
   centeredSlides: true,
   loop: true,
-
-  // autoplay: {
-  //   delay: 3000, // Устанавливаем задержку автоматической прокрутки в 2 секунды
-  // },
-  initialSlide: 2, // Устанавливаем активным слайдом по умолчанию третий слайд
+  navigation: {
+    nextEl: '.guarantees__arrow-r',
+    prevEl: '.guarantees__arrow-l',
+  },
+  initialSlide: 2,
   breakpoints: {
     320: {
       slidesPerView: 1.3,

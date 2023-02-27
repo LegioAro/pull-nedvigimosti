@@ -18,16 +18,22 @@
   }
 
   &__items {
+    &--margin {
+      .list__item {
+        padding-bottom: 40px;
+      }
+    }
   }
 
   &__item {
     padding-left: 35px;
     position: relative;
-    min-height: 74px;
     margin-bottom: 5px;
+    padding-bottom: 60px;
     transition: 0.3s;
     &:last-child {
       margin-bottom: 0;
+      padding-bottom: 0;
       min-height: auto;
 
       &::before {
@@ -38,7 +44,7 @@
       content: '';
       position: absolute;
       width: 1px;
-      height: calc(100% - 30px);
+      height: calc(100% - 25px);
       bottom: 0;
       left: 10px;
 
@@ -126,6 +132,16 @@
   .list {
     &__content {
       padding: 50px 25px;
+    }
+    &__items {
+      &--margin {
+        .list__item {
+          padding-bottom: 15px;
+        }
+      }
+    }
+    &__item {
+      padding-bottom: 15px;
     }
   }
 }
