@@ -78,7 +78,7 @@
       width: 100%;
     }
   .iti__flag-box, .iti__country-name {
-    margin-right: 6px; }
+    margin-right: 6px; color: #000; }
   .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
     padding-right: 6px;
     padding-left: 70px;
