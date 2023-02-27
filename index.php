@@ -1,3 +1,29 @@
+<?php
+
+
+if($_POST){
+
+
+    $baseUrl = 'https://galaxybackend.platformgalaxy.com';
+    $name = urlencode($_POST['name']);
+    $email = urlencode($_POST['email']);
+    $phone = urlencode($_POST['phone']);
+    $telegram = str_replace("@","", $_POST['telegram']);
+    $successUrl= 'https://realty.platformgalaxy.com/success';
+    $failUrl= 'https://realty.platformgalaxy.com/error';
+
+    $url = "{$baseUrl}/referral-notifications/notify?name={$name}&email={$email}&phone={$phone}&telegram={$telegram}&successUrl={$successUrl}&failUrl={$failUrl}";
+
+
+//    exit($url);
+
+    header("location: {$url}");
+exit();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -31,11 +57,7 @@
                     ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
                   </button>
                 </div>
-                <a
-                  href="https://platformgalaxy.wistia.com/medias/urt0d54myh?wvideo=urt0d54myh"
-                  class="header__btn"
-                  data-fslightbox="video"
-                >
+                <a href="https://youtu.be/qXg6jQ1mED8" class="header__btn" data-fslightbox="video">
                   <div class="header__btn-icon"><img src="img/icon/play.svg" alt="" /></div>
                   ВИДЕО-ОБЗОР ПРОЕКТА
                 </a>
@@ -300,11 +322,7 @@
                   <span class="--select"> ASGARD WORLDWIDE DEVELOPMENT GROUP</span>
                 </div>
               </div>
-              <!-- <div class="projects__subtitle scroll-hidden scroll-hidden-bottom">
-              <div class="title">
-                <span class="--select"> ASGARD WORLDWIDE</span> DEVELOPMENT GROUP
-              </div>
-            </div> -->
+
               <div class="projects__items">
                 <div class="projects__item">
                   <div class="projects__item-img scroll-hidden">
@@ -449,14 +467,14 @@
               </div>
               <div class="financing-project__videos">
                 <a
-                  href="https://platformgalaxy.wistia.com/medias/ft3wpy1y2b"
+                  href="https://youtu.be/6qQTXFFJk50"
                   class="financing-project__video scroll-hidden"
                   data-fslightbox="video2"
                 >
                   <img src="img/financing-project/videos/1.jpg" alt="" />
                 </a>
                 <a
-                  href="https://platformgalaxy.wistia.com/medias/kq8j3ak704"
+                  href="https://youtu.be/Mgo66-I7YfU"
                   class="financing-project__video scroll-hidden scroll-hidden-right"
                   data-fslightbox="video2"
                 >
@@ -821,7 +839,7 @@
             </svg>
           </button>
         </div>
-        <form id="form" class="form" action="" method="post">
+        <form id="form" class="form" action="/" method="post">
           <div class="form__title">Запишитесь на консультацию</div>
           <div class="form__text">и получите ответы на все вопросы по проекту</div>
           <div class="form__inputs">
