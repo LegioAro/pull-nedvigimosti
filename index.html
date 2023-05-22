@@ -1,3 +1,32 @@
+<?php
+
+if($_POST){
+
+
+    $baseUrl = 'https://galaxybackend.platformgalaxy.com';
+    $name = urlencode($_POST['name']);
+    $email = urlencode($_POST['email']);
+    $phone = urlencode($_POST['phone']);
+    $telegram = $_POST['telegram'];//str_replace("@","", $_POST['telegram']);
+    $successUrl= 'https://realty.platformgalaxy.com/success';
+    $failUrl= 'https://realty.platformgalaxy.com/error';
+
+    $url = "{$baseUrl}/referral-notifications/notify?name={$name}&email={$email}&phone={$phone}&telegram={$telegram}&successUrl={$successUrl}&failUrl={$failUrl}";
+
+    if($_SERVER['REMOTE_ADDR'] === '176.98.25.53'){
+        print_r($url);
+        exit();
+    }
+
+
+
+    header("location: {$url}");
+exit();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -22,7 +51,7 @@
               <div class="header__logo"><img src="img/logo.svg" alt="" /></div>
               <div class="header__title">Пул недвижимости в Galaxy Platform</div>
               <div class="header__text">
-                Заработайте 60% годовых с Galaxy Platform, финансируя покупку земли под застройку
+                Заработай 60% за год с GALAXY PLATFORM, финансируя покупку земли под застройку
                 недвижимости в Турции в 2023 году
               </div>
               <div class="header__btns">
@@ -67,7 +96,7 @@
               </div>
               <div class="conditions__item">
                 <div class="conditions__item-title --select">13 мес.</div>
-                <div class="conditions__item-text">Возврат суммы инвестиций через 13 месяцев</div>
+                <div class="conditions__item-text">Возврат суммы вложений через 13 месяцев</div>
               </div>
             </div>
           </div>
@@ -228,7 +257,7 @@
                 <div class="partner__items">
                   <div class="partner__item scroll-hidden scroll-hidden-right">
                     <div class="partner__item-title --select">2020</div>
-                    <div class="partner__item-text">на рынке: с 2020 года</div>
+                    <div class="partner__item-text">Застройщик на рынке: с 2020 года</div>
                   </div>
                   <div class="partner__item scroll-hidden scroll-hidden-right">
                     <div class="partner__item-title --select">$120.000</div>
@@ -255,10 +284,6 @@
                   <div class="partner__item scroll-hidden scroll-hidden-right">
                     <div class="partner__item-title --select">4</div>
                     <div class="partner__item-text">в процессе постройки: 4 объекта</div>
-                  </div>
-                  <div class="partner__item scroll-hidden scroll-hidden-right">
-                    <div class="partner__item-title --select">$38.829.000</div>
-                    <div class="partner__item-text">выведено: $38.829.000</div>
                   </div>
                 </div>
               </div>
@@ -289,129 +314,12 @@
       <div class="about">
         <div class="container">
           <div class="about__wrapper">
-            <section class="projects">
-              <div class="projects__title scroll-hidden scroll-hidden-bottom">
-                <div class="title">
-                  Какие проекты уже были реализованы с участием компании <br />
-                  <span class="--select"> ASGARD WORLDWIDE DEVELOPMENT GROUP</span>
-                </div>
-              </div>
-
-              <div class="projects__items">
-                <div class="projects__item">
-                  <div class="projects__item-img scroll-hidden">
-                    <img src="img/projects/1.jpg" alt="" />
-                  </div>
-                  <div class="projects__item-info">
-                    <div class="projects__item-title --select scroll-hidden scroll-hidden-right">
-                      ЖК «Eco Residence»
-                    </div>
-                    <div class="projects__item-text scroll-hidden scroll-hidden-right">
-                      Закрытый экологичный комплекс, расположенный в прекрасном курортном районе
-                      Алании, городке Авсаллар
-                    </div>
-                    <div class="projects__item-list">
-                      <div class="projects__item-list-title scroll-hidden scroll-hidden-right">
-                        Наш дом расположен:
-                      </div>
-                      <div class="projects__item-list-items">
-                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            В окружении соснового леса в 800 метрах от Национального парка Инжекум
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            В 1 км от центра города Авсаллар, с его притягательными южными
-                            ресторанчиками и магазинами
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            В 2-х км от комплекса находится красивейший пляж Инжекум, куда приезжают
-                            туристы из разных уголков Турции
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            Удачное расположение посёлка Авсаллар между городами Анталией и Аланией,
-                            где находятся аэропорты
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            Климат в Авсалларе приморский, субтропический. С жарким летом и вполне
-                            комфортной для отдыха осенью. Без резких перепадов годичных температур
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="projects__item-subtitle --select scroll-hidden scroll-hidden-right">
-                      Сдан для проведения финальных отделочных работ и меблировки
-                    </div>
-                  </div>
-                  <div class="projects__item-dec">Eco Residence</div>
-                </div>
-                <div class="projects__item">
-                  <div class="projects__item-img scroll-hidden scroll-hidden-right">
-                    <img src="img/projects/2.jpg" alt="" />
-                  </div>
-                  <div class="projects__item-info">
-                    <div class="projects__item-title --select scroll-hidden">ЖК «Eco City»</div>
-                    <div class="projects__item-text scroll-hidden">
-                      Это закрытый экологичный комплекс, расположенный в самой зелёной зоне
-                      прекрасного курортного района Алании - Авсаллар
-                    </div>
-                    <div class="projects__item-list">
-                      <div class="projects__item-list-title scroll-hidden">
-                        170 апартаментов. Особенности:
-                      </div>
-                      <div class="projects__item-list-items">
-                        <div class="projects__item-list-item scroll-hidden">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            Технология строительства - сейсмоустойчивый монолит 1 класса
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            Дома строятся с разводками под газ и с выводами под батареи
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            Внешние стены из красного кирпича
-                          </div>
-                        </div>
-                        <div class="projects__item-list-item scroll-hidden">
-                          <div class="list__item-dec"></div>
-                          <div class="projects__item-list-text">
-                            В каждом блоке имеется артезианская скважина
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="projects__item-subtitle --select scroll-hidden">
-                      <b> Начало строительства:</b> апрель 2022 года
-                      <br />
-                      <b> Окончание строительства:</b> март 2023 года
-                    </div>
-                  </div>
-                  <div class="projects__item-dec">Eco City</div>
-                </div>
-              </div>
-            </section>
-
             <section class="financing-project">
               <div class="financing-project__title scroll-hidden scroll-hidden-bottom">
-                <div class="title">Проект, под который собирается финансирование</div>
+                <div class="title">
+                  Проект, реализованный в партнерстве с
+                  <span class="--select"> ASGARD WORLDWIDE DEVELOPMENT GROUP</span>
+                </div>
               </div>
               <div class="financing-project__info scroll-hidden scroll-hidden-bottom">
                 <div class="financing-project__info-title">
@@ -492,23 +400,25 @@
         <div class="container small">
           <div class="profit__wrapper">
             <div class="profit__title scroll-hidden scroll-hidden-bottom">
-              <div class="title">Почему нашему партнеру выгодно</div>
+              <div class="title">Почему проекту Asgard выгодно</div>
             </div>
             <div class="profit__subtitle scroll-hidden scroll-hidden-bottom">
-              <div class="subtitle">привлекать инвестиции с выплатой в 60% годовых</div>
+              <div class="subtitle">
+                привлекать клиентов с выплатой прибыли от продажи квартир в 60%?
+              </div>
             </div>
             <div class="profit__items">
               <div class="profit__item scroll-hidden">
                 <div class="profit__item-num --select">01</div>
                 <div class="profit__item-text">
-                  Маржинальность проекта для застройщика — 200%. Он делится с инвестором лишь частью
-                  своей прибыли в размере 60%
+                  Маржинальность проекта по покупке земли и строительству жилищных комплексов ~200%.
+                  Проект Asgard делиться лишь частью своей прибыли (в перерасчете на проценты 60%)
                 </div>
               </div>
               <div class="profit__item scroll-hidden scroll-hidden-right">
                 <div class="profit__item-num --select">02</div>
                 <div class="profit__item-text">
-                  Застройщик получает нужную сумму за короткий срок, поэтому может начать
+                  Проект Asgard получает нужную сумму за короткий срок, поэтому может начать
                   строительство без задержек
                 </div>
               </div>
@@ -557,8 +467,8 @@
               <div class="advantages__desc scroll-hidden">
                 <p>
                   <span
-                    >Пополнив ваш инвестиционный портфель этим инструментом, вы создаете надежный
-                    дополнительный источник пассивного дохода</span
+                    >Воспользовавшись этим инструментом, вы создадите дополнительный источник
+                    дохода</span
                   >
                 </p>
                 <p>
@@ -573,7 +483,10 @@
             </div>
             <div class="advantages__items">
               <div class="advantages__item scroll-hidden scroll-hidden-right">
-                <p>Гарантированная доходность по smart контракту 5% в месяц</p>
+                <p>
+                  Выплаты гарантированы smart контрактом. Стейкирование быстро начинает приносить
+                  вам прибыль (Вознаграждение за стейкирование)
+                </p>
               </div>
               <div class="advantages__item scroll-hidden scroll-hidden-right">
                 <p>
@@ -587,13 +500,16 @@
               <div class="advantages__item scroll-hidden scroll-hidden-right">
                 <p>
                   Начисление вознаграждения за стейкинг в течение 12 месяцев с возвратом суммы
-                  инвестиций через 13 месяцев
+                  вложений через 13 месяцев. Токены ENOTE разблокируются на вашем кошельке и вы
+                  свободно можете обменять их на USDT
                 </p>
               </div>
               <div class="advantages__item scroll-hidden scroll-hidden-right">
                 <p>
-                  Возможность выйти из пула досрочно, передав свою долю другому партнеру или вывести
-                  вложенную сумму за вычетом выплаченной прибыли
+                  Досрочный разлок токенов ENOTE возможен по истечению 3 (трех) календарных месяцев
+                  с момента старта Пула. При досрочном разлоке удерживается все начисленное
+                  вознаграждение за стейкирование. Срок вывода токенов ENOTE их стейкинга - в
+                  течении 1 (одного) календарного месяца
                 </p>
               </div>
             </div>
@@ -638,23 +554,25 @@
                     <div class="list__item scroll-hidden scroll-hidden-right">
                       <div class="list__item-dec"></div>
                       <div class="list__item-text">
-                        С момента закрытия пула, 4 раза в месяц, проинвестированная вами сумма
-                        направляется нашему партнеру (ASGARD) для покупки земельного участка в
-                        Турции под застройку элитного комплекса недвижимости
+                        С момента закрытия пула, 4 раза в месяц, вложенная вами сумма направляется
+                        нашему партнеру (ASGARD) для покупки земельного участка в Турции под
+                        застройку элитного комплекса недвижимости
                       </div>
                     </div>
                     <div class="list__item scroll-hidden scroll-hidden-right">
                       <div class="list__item-dec"></div>
                       <div class="list__item-text">
-                        Начисление дохода в размере 5% будет происходить ежемесячно в течение всего
-                        срока инвестирования (то есть 12 месяцев)
+                        Начисление прибыли в размере 5% будет происходить ежемесячно в течение всего
+                        периода стейкирования (то есть 12 месяцев)
                       </div>
                     </div>
                     <div class="list__item scroll-hidden scroll-hidden-right">
                       <div class="list__item-dec"></div>
                       <div class="list__item-text">
-                        Возврат суммы инвестиций в размере 100% будет произведен в течение 30 дней с
-                        момента окончания срока инвестирования
+                        Возврат суммы ваших вложений в размере 100% будет произведен в течение 30
+                        дней с момента окончания срока инвестирования путем разблокировки токенов
+                        ENOTE на вашем криптокошельке. В дальнейшем токены ENOT вы можете обменять
+                        на USDT
                       </div>
                     </div>
                   </div>
@@ -702,15 +620,6 @@
                     строительство на территории Турции
                   </div>
                 </div>
-                <div class="guarantees__item swiper-slide">
-                  <div class="guarantees__item-img">
-                    <img src="img/icon/arrow-circle.svg" alt="" />
-                  </div>
-                  <div class="guarantees__item-title">документы</div>
-                  <div class="guarantees__item-text">
-                    Как только земля будет куплена, вы увидите документы о ее приобретении
-                  </div>
-                </div>
               </div>
               <div class="guarantees__arrows">
                 <div class="guarantees__arrow guarantees__arrow-l">
@@ -734,8 +643,8 @@
               </div>
               <div class="call__subtitle scroll-hidden">
                 <div class="subtitle">
-                  в пул недвижимости с Galaxy Platform, чтобы гарантированно зарабатывать пассивно
-                  5% в месяц на недвижимости в Турции
+                  в пул недвижимости с Galaxy Platform, чтобы гарантированно зарабатывать 5% в месяц
+                  на недвижимости в Турции
                 </div>
               </div>
 
@@ -813,7 +722,7 @@
             </svg>
           </button>
         </div>
-        <form id="form" class="form" action="" method="post">
+        <form id="form" class="form" action="/" method="post">
           <div class="form__title">Запишитесь на консультацию</div>
           <div class="form__text">и получите ответы на все вопросы по проекту</div>
           <div class="form__inputs">
