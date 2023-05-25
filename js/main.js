@@ -38,6 +38,11 @@ const mySwiper2 = new Swiper('.slider-2', {
   spaceBetween: 8,
   slidesPerView: 3,
 
+  navigation: {
+    nextEl: '.financing-project__arrow-r',
+    prevEl: '.financing-project__arrow-l',
+  },
+
   breakpoints: {
     320: {
       slidesPerView: 1.2,

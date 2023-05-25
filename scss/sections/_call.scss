@@ -1,5 +1,5 @@
 .call {
-  padding-bottom: 108px;
+  padding-bottom: 24px;
   background-image: url(../img/call/bg.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -69,10 +69,14 @@
 
   &__img {
     position: absolute;
-    width: 1236px;
+    width: 1300px;
     bottom: 0;
     left: 98px;
     transition: 0.3s;
+  }
+
+  .global-text-block {
+    margin-top: 80px;
   }
 }
 
@@ -97,7 +101,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .call {
     &__img {
       width: 800px;
@@ -108,6 +112,7 @@
 
 @media (max-width: 768px) {
   .call {
+    padding-bottom: 50px;
     &__wrapper {
       padding-bottom: 0px;
     }
@@ -118,7 +123,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 740px) {
   .call {
     &__img {
       width: 400px;
@@ -127,11 +132,16 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
   .call {
     &__img {
       display: none;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .call {
     &__content {
       display: flex;
       flex-direction: column;

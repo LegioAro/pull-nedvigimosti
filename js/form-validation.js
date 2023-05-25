@@ -6,7 +6,7 @@ inputs.forEach((input) => {
     let resultReg = '';
     let newValue = '';
     if (input.classList.contains('val-telegram')) {
-      const regVal = /[a-z\.\-\_]+/gis;
+      const regVal = /[a-z0-9\.\-\_]+/gis;
       let regArr = inputValue.matchAll(regVal);
 
       for (let elem of regArr) {
@@ -166,8 +166,9 @@ let errorMap = [
 ];
 
 const iti = window.intlTelInput(input, {
-  initialCountry: 'ru',
+  initialCountry: 'tr',
   utilsScript: './utils.js',
+  preferredCountries: ["tr", "ua", "ru"]
 });
 
 var reset = function () {
