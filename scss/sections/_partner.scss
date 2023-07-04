@@ -111,7 +111,12 @@
     line-height: 165%;
     letter-spacing: 0.03em;
     color: #ffffff;
-    margin-bottom: 37px;
+    margin-bottom: 20px;
+  }
+
+  &__content-img-title {
+    font-size: 18px;
+    margin-bottom: 15px;
   }
 
   &__content-img {
@@ -160,7 +165,7 @@
       max-width: 380px;
     }
     &__content-img {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     &__content-imgs {
       grid-column-gap: 20px;
