@@ -1,33 +1,43 @@
 //Sliders
 const mySwiper = new Swiper('.slider-1', {
   spaceBetween: 21,
-  slidesPerView: 5,
+  slidesPerView: 3,
   centeredSlides: true,
-  loop: true,
+  loop: false,
+  allowTouchMove: false,
+
   navigation: {
     nextEl: '.guarantees__arrow-r',
     prevEl: '.guarantees__arrow-l',
   },
-  initialSlide: 2,
+  initialSlide: 1,
   breakpoints: {
     320: {
       slidesPerView: 1.3,
       spaceBetween: 10,
+      loop: true,
+      allowTouchMove: true,
     },
     425: {
       slidesPerView: 1.5,
       spaceBetween: 15,
+      allowTouchMove: true,
+      loop: true,
     },
     600: {
       slidesPerView: 2,
       spaceBetween: 20,
+      allowTouchMove: true,
+      loop: true,
     },
     1000: {
-      slidesPerView: 3.5,
+      slidesPerView: 3,
       spaceBetween: 20,
+      allowTouchMove: false,
+      loop: false,
     },
     1500: {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 21,
     },
   },

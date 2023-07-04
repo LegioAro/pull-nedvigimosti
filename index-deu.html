@@ -1,0 +1,944 @@
+<!-- <?php
+
+
+if($_POST){
+
+
+    $baseUrl = 'https://galaxybackend.platformgalaxy.com';
+    $countryCode = urlencode($_POST['country-code']);
+    $name = urlencode($_POST['name']);
+    $email = urlencode($_POST['email']);
+    $phone = urlencode($_POST['phone']);
+    $telegram = str_replace("@","", $_POST['telegram']);
+    $successUrl= 'https://realty.platformgalaxy.com/success';
+    $failUrl= 'https://realty.platformgalaxy.com/error';
+
+    $url = "{$baseUrl}/referral-notifications/notify?name={$name}&email={$email}&countryCode={$countryCode}&phone={$phone}&telegram={$telegram}&successUrl={$successUrl}&failUrl={$failUrl}";
+
+
+//    exit($url);
+
+    header("location: {$url}");
+exit();
+}
+
+
+?> -->
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Immobilienpool</title>
+  </head>
+  <body>
+    <div class="decor-top"><img src="img/decor-top.png" alt="" /></div>
+    <div class="decor-top-2"><img src="img/decor-top-2.png" alt="" /></div>
+
+    <div class="overflow">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__content">
+              <div class="header__logo-block">
+                <div class="header__logo"><img src="img/logo.svg" alt="" /></div>
+                <div class="header__lang">
+                  <div class="header__lang-header">
+                    <div class="header__lang-flag"><img src="img/langs/deu.png" alt="" /></div>
+                    <div class="header__lang-text">deu</div>
+                    <div class="header__lang-btn"><img src="img/icon/arrow-top.svg" alt="" /></div>
+                  </div>
+                  <div class="header__lang-body">
+                    <a href="" class="header__lang-item">
+                      <div class="header__lang-flag"><img src="img/langs/ru.png" alt="" /></div>
+                      <div class="header__lang-text">ru</div>
+                    </a>
+                    <a href="" class="header__lang-item">
+                      <div class="header__lang-flag"><img src="img/langs/eng.png" alt="" /></div>
+                      <div class="header__lang-text">eng</div>
+                    </a>
+                    <a href="" class="header__lang-item">
+                      <div class="header__lang-flag"><img src="img/langs/ua.png" alt="" /></div>
+                      <div class="header__lang-text">ua</div>
+                    </a>
+                    <a href="" class="header__lang-item">
+                      <div class="header__lang-flag"><img src="img/langs/spa.png" alt="" /></div>
+                      <div class="header__lang-text">spa</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__title">Immobilienpool in der Galaxy Platform</div>
+              <div class="header__text">
+                Verdienen Sie 60% Jahreszins mit Galaxy Platform, in dem Sie den Kauf von Immobilien
+                Entwicklungsland in der Türkei im Jahr 2023 finanzieren
+              </div>
+              <div class="header__btns">
+                <div class="header__btn-1">
+                  <button class="btn modal__btn-active" data-modal-src="modal">
+                    Erfahren Sie mehr beim Beratungsgespräch
+                  </button>
+                </div>
+                <a href="https://youtu.be/qXg6jQ1mED8" class="header__btn" data-fslightbox="video">
+                  <div class="header__btn-icon"><img src="img/icon/play.svg" alt="" /></div>
+                  VIDEO-REVIEW DES PROJEKTS
+                </a>
+              </div>
+            </div>
+            <div class="header__img"><img src="img/header/img.png" alt="" /></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="conditions">
+        <div class="container">
+          <div class="conditions__wrapper">
+            <div class="conditions__title scroll-hidden scroll-hidden-bottom">
+              <div class="title">Bedingungen für die Teilnahme am Immobilienpool</div>
+            </div>
+            <div class="conditions__items scroll-hidden scroll-hidden-bottom">
+              <div class="conditions__item">
+                <div class="conditions__item-title --select">50 USDT</div>
+                <div class="conditions__item-text">Eintritt ab 50 USDT</div>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__item-title --select">5 %</div>
+                <div class="conditions__item-text">Zahlung ab dem ersten Monat 5%</div>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__item-title --select">60 %</div>
+                <div class="conditions__item-text">Profitieren Sie vom Pool - 60% pro Jahr</div>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__item-title --select">12 Monate</div>
+                <div class="conditions__item-text">Teilnahmezeitraum 12 Monate</div>
+              </div>
+              <div class="conditions__item">
+                <div class="conditions__item-title --select">13 Monat</div>
+                <div class="conditions__item-text">
+                  Rückzahlung der Körperschaft des Anlagebetrages für den 13. Monat
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how">
+        <div class="container small">
+          <div class="how__wrapper">
+            <div class="how__info scroll-hidden">
+              <div class="how__info-icon --select">?</div>
+              <div class="how__info-title"><div class="title">Wie funktioniert es?</div></div>
+              <div class="how__info-btn">
+                <button class="btn modal__btn-active" data-modal-src="modal">
+                  Lassen Sie sich beraten
+                </button>
+              </div>
+            </div>
+            <div class="how__content">
+              <div class="list">
+                <div class="list__content">
+                  <div class="list__text">Zum Beispiel:</div>
+                  <div class="list__items">
+                    <div class="list__item scroll-hidden scroll-hidden-bottom">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">Sie investieren <b> $10.000</b></div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-bottom">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        in einem Monat erhalten Sie 5%, dh <b> 500$</b> passives Einkommen jeden
+                        Monat
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-bottom">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        die Investitionsdauer beträgt <b> 12 Monate</b>
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-bottom">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        nach Ablauf dieser Frist eine Rendite von 100% des Investitionsbetrags
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-bottom">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        Insgesamt 500$ * 12 Monate = <b> $6.000</b> passives Einkommen über 12
+                        Monate
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list__dec"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="how__dec"><img src="img/how/dec.png" alt="" /></div>
+      </section>
+
+      <section class="why">
+        <div class="container">
+          <div class="why__wrapper">
+            <div class="why__title scroll-hidden scroll-hidden-bottom">
+              <div class="title">Warum genau ist der türkische Markt</div>
+            </div>
+            <div class="why__subtitle scroll-hidden scroll-hidden-bottom">
+              <div class="subtitle">
+                während der globalen Krise macht es möglich, große Prozenten an Immobilien zu
+                machen?
+              </div>
+            </div>
+            <div class="why__text --select scroll-hidden scroll-hidden-bottom">
+              [6 Gründe, jetzt zu investieren]
+            </div>
+            <div class="why__items">
+              <div class="why__item scroll-hidden scroll-hidden-bottom">
+                <div class="why__item-img"><img src="img/why/1.svg" alt="" /></div>
+                <div class="why__item-title">Der rasante Anstieg der Preise</div>
+                <div class="why__item-text">für den Kauf und die Anmietung von Immobilien</div>
+              </div>
+              <div class="why__item scroll-hidden scroll-hidden-bottom">
+                <div class="why__item-img"><img src="img/why/2.svg" alt="" /></div>
+                <div class="why__item-title">Die Türkei ist das beliebteste Land für den Umzug</div>
+                <div class="why__item-text">
+                  aus GUS-Staaten. Die Türkei unterhält freundliche Beziehungen mit allen
+                  GUS-Staaten
+                </div>
+              </div>
+              <div class="why__item scroll-hidden scroll-hidden-bottom">
+                <div class="why__item-img"><img src="img/why/3.svg" alt="" /></div>
+                <div class="why__item-title">Möglichkeit, die Staatsbürgerschaft zu erlangen</div>
+                <div class="why__item-text">
+                  Der Kauf einer Immobilien im Wert von 440.000$ oder berechtigt zur
+                  Staatsbürgerschaft. Die Türkei belegt den 53. Platz im Powers of Passport Rating,
+                  ihre Bürger können die Grenzen von 110 Staaten ohne Visum übertreten
+                </div>
+              </div>
+              <div class="why__item scroll-hidden scroll-hidden-bottom">
+                <div class="why__item-img"><img src="img/why/4.svg" alt="" /></div>
+                <div class="why__item-title">Rentable Miete</div>
+                <div class="why__item-text">— Rendite 10-12% zum Vergleich in Spanien 4-5%</div>
+              </div>
+              <div class="why__item scroll-hidden scroll-hidden-bottom">
+                <div class="why__item-img"><img src="img/why/5.svg" alt="" /></div>
+                <div class="why__item-title">
+                  Ein einfaches Schema für den Erwerb von Immobilien
+                </div>
+                <div class="why__item-text">
+                  und ein erschwinglicher Preis, der die Anzahl potenzieller Investoren erweitert
+                </div>
+              </div>
+              <div class="why__item scroll-hidden scroll-hidden-bottom">
+                <div class="why__item-img"><img src="img/why/6.svg" alt="" /></div>
+                <div class="why__item-title">große Investition</div>
+                <div class="why__item-text">
+                  Im Land werden große Investitionen erwartet. Ein 100-jähriges Moratorium zur
+                  Begrenzung des Bergbaus läuft bald aus. Der Bodenwert wird steigen
+                </div>
+              </div>
+            </div>
+            <div class="desc desc--big scroll-hidden scroll-hidden-bottom">
+              <p class="--select">
+                Neue Baunormen ermöglichen es den Anlagen, einem Erdbeben von mehr als 9 Punkten
+                standzuhalten, was jetzt in der Türkei sehr relevant ist
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner">
+        <div class="container">
+          <div class="partner__wrapper">
+            <div class="partner__img scroll-hidden"><img src="img/partner/bg.jpg" alt="" /></div>
+            <div class="partner__content">
+              <div class="partner__content-info">
+                <div class="partner__title scroll-hidden">
+                  <div class="title">Wer ist unser Partner?</div>
+                  <div class="partner__logo"><img src="img/partner/logo.svg" alt="" /></div>
+                </div>
+                <div class="partner__desc scroll-hidden">
+                  Galaxy Platform kooperiert mit einem der zuverlässigen und nachgefragten
+                  Entwickler in Alanya-Antalya-Asgard Worldwide Development Group
+                </div>
+                <div class="partner__text scroll-hidden">
+                  <p>
+                    Asgard befasst sich mit dem Kauf von Grundstücken für den Bau von
+                    Luxusimmobilien in der Türkei
+                  </p>
+                  <p>
+                    Das Unternehmen investiert aktiv eigene Mittel in den Bau und bietet
+                    Kooperationen an, um die Anzahl der im Bau befindlichen Objekte zu skalieren
+                  </p>
+                </div>
+                <div class="partner__items">
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">2020</div>
+                    <div class="partner__item-text">Auf dem Markt seit 2020</div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">$120.000</div>
+                    <div class="partner__item-text">
+                      Durchschnittliche Rechnung für eine Wohnung:120.000$
+                    </div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">470</div>
+                    <div class="partner__item-text">Verkauft: 470 Wohnungen</div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">$9.000.000</div>
+                    <div class="partner__item-text">investierte Eigenmittel: 9.000.000$</div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">+331%</div>
+                    <div class="partner__item-text">Rendite:+331%</div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">$29.829.000</div>
+                    <div class="partner__item-text">Gewinn: 29.829.000$</div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">4</div>
+                    <div class="partner__item-text">Im Bau: 4 Objekte</div>
+                  </div>
+                  <div class="partner__item scroll-hidden scroll-hidden-right">
+                    <div class="partner__item-title --select">$38.829.000</div>
+                    <div class="partner__item-text">Zurückgezogen: 38.829.000$</div>
+                  </div>
+                </div>
+              </div>
+              <div class="partner__content-imgs">
+                <div class="partner__content-imgs-block scroll-hidden scroll-hidden-right">
+                  <div class="partner__content-img--big">
+                    <img src="img/partner/1.png" alt="" />
+                  </div>
+                  <div class="partner__content-img--small">
+                    <img src="img/partner/1-2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="partner__content-imgs-block scroll-hidden scroll-hidden-right">
+                  <div class="partner__content-img--big">
+                    <img src="img/partner/2.png" alt="" />
+                  </div>
+                  <div class="partner__content-img--small">
+                    <img src="img/partner/2-2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partner__dec"><img src="img/partner/dec.png" alt="" /></div>
+      </section>
+
+      <div class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <section class="projects">
+              <div class="projects__title scroll-hidden scroll-hidden-bottom">
+                <div class="title">
+                  Welche Projekte wurden bereits unter Beteiligung des Unternehmens umgesetzt <br />
+                  <span class="--select"> ASGARD WORLDWIDE DEVELOPMENT GROUP</span>
+                </div>
+              </div>
+
+              <div class="projects__items">
+                <div class="projects__item">
+                  <div class="projects__item-img scroll-hidden">
+                    <img src="img/projects/1.jpg" alt="" />
+                  </div>
+                  <div class="projects__item-info">
+                    <div class="projects__item-title --select scroll-hidden scroll-hidden-right">
+                      ЖК «Eco Residence»
+                    </div>
+                    <div class="projects__item-text scroll-hidden scroll-hidden-right">
+                      Закрытый экологичный комплекс, расположенный в прекрасном курортном районе
+                      Алании, городке Авсаллар
+                    </div>
+                    <div class="projects__item-list">
+                      <div class="projects__item-list-title scroll-hidden scroll-hidden-right">
+                        Наш дом расположен:
+                      </div>
+                      <div class="projects__item-list-items">
+                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            В окружении соснового леса в 800 метрах от Национального парка Инжекум
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            В 1 км от центра города Авсаллар, с его притягательными южными
+                            ресторанчиками и магазинами
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            В 2-х км от комплекса находится красивейший пляж Инжекум, куда приезжают
+                            туристы из разных уголков Турции
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            Удачное расположение посёлка Авсаллар между городами Анталией и Аланией,
+                            где находятся аэропорты
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden scroll-hidden-right">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            Климат в Авсалларе приморский, субтропический. С жарким летом и вполне
+                            комфортной для отдыха осенью. Без резких перепадов годичных температур
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="projects__item-subtitle --select scroll-hidden scroll-hidden-right">
+                      Сдан для проведения финальных отделочных работ и меблировки
+                    </div>
+                  </div>
+                  <div class="projects__item-dec">Eco Residence</div>
+                </div>
+                <div class="projects__item">
+                  <div class="projects__item-img scroll-hidden scroll-hidden-right">
+                    <img src="img/projects/2.jpg" alt="" />
+                  </div>
+                  <div class="projects__item-info">
+                    <div class="projects__item-title --select scroll-hidden">ЖК «Eco City»</div>
+                    <div class="projects__item-text scroll-hidden">
+                      Это закрытый экологичный комплекс, расположенный в самой зелёной зоне
+                      прекрасного курортного района Алании - Авсаллар
+                    </div>
+                    <div class="projects__item-list">
+                      <div class="projects__item-list-title scroll-hidden">
+                        170 апартаментов. Особенности:
+                      </div>
+                      <div class="projects__item-list-items">
+                        <div class="projects__item-list-item scroll-hidden">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            Технология строительства - сейсмоустойчивый монолит 1 класса
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            Дома строятся с разводками под газ и с выводами под батареи
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            Внешние стены из красного кирпича
+                          </div>
+                        </div>
+                        <div class="projects__item-list-item scroll-hidden">
+                          <div class="list__item-dec"></div>
+                          <div class="projects__item-list-text">
+                            В каждом блоке имеется артезианская скважина
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="projects__item-subtitle --select scroll-hidden">
+                      <b> Начало строительства:</b> апрель 2022 года
+                      <br />
+                      <b> Окончание строительства:</b> март 2023 года
+                    </div>
+                  </div>
+                  <div class="projects__item-dec">Eco City</div>
+                </div>
+              </div>
+            </section>
+
+            <section class="financing-project">
+              <div class="financing-project__title scroll-hidden scroll-hidden-bottom">
+                <div class="title">Das Projekt, für das eine Finanzierung beantragt wird</div>
+              </div>
+              <div class="financing-project__info scroll-hidden scroll-hidden-bottom">
+                <div class="financing-project__info-title">
+                  <div class="financing-project__info-title-item">
+                    <div class="financing-project__info-title-icon">
+                      <img src="img/why/2.svg" alt="" />
+                    </div>
+                    <div class="financing-project__info-title-text">
+                      Standort: <br />
+                      Avsallar, Alanya
+                    </div>
+                  </div>
+                  <div class="financing-project__info-title-item">
+                    <div class="financing-project__info-title-icon">
+                      <img src="img/why/2.svg" alt="" />
+                    </div>
+                    <div class="financing-project__info-title-text">
+                      Fläche: <br />
+                      3033 м²
+                    </div>
+                  </div>
+                </div>
+                <div class="financing-project__info-text">
+                  Auf dem Gelände wird eine Wohnanlage entstehen, bestehend aus zwei Blöcken mit je
+                  24 Wohnungen auf 5 Etagen (Premiumklasse mit Zentralheizung und Klimaanlage)
+                </div>
+              </div>
+              <div class="financing-project__videos">
+                <a
+                  href="https://youtu.be/6qQTXFFJk50"
+                  class="financing-project__video scroll-hidden"
+                  data-fslightbox="video2"
+                >
+                  <img src="img/financing-project/videos/1.jpg" alt="" />
+                </a>
+                <a
+                  href="https://youtu.be/Mgo66-I7YfU"
+                  class="financing-project__video scroll-hidden scroll-hidden-right"
+                  data-fslightbox="video2"
+                >
+                  <img src="img/financing-project/videos/2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="financing-project__imgs slider-2 scroll-hidden scroll-hidden-bottom">
+                <div class="swiper-wrapper">
+                  <div class="financing-project__img swiper-slide">
+                    <img src="img/financing-project/imgs/1.png" alt="" />
+                  </div>
+                  <div class="financing-project__img swiper-slide">
+                    <img src="img/financing-project/imgs/2.png" alt="" />
+                  </div>
+                  <div class="financing-project__img swiper-slide">
+                    <img src="img/financing-project/imgs/3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="financing-project__infos">
+                <div class="financing-project__info scroll-hidden scroll-hidden-bottom">
+                  <div
+                    class="financing-project__info-text financing-project__info-text--big --select"
+                  >
+                    Kommen Sie zu einem Beratungsgespräch Hund erfahren Sie die Details zu den
+                    Projekten des Entwicklers sowie die Aussichten, darin zu investieren
+                  </div>
+                </div>
+              </div>
+              <div class="financing-project__btn scroll-hidden scroll-hidden-bottom">
+                <button class="btn modal__btn-active" data-modal-src="modal">
+                  Lassen Sie sich beraten
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <section class="profit">
+        <div class="container small">
+          <div class="profit__wrapper">
+            <div class="profit__title scroll-hidden scroll-hidden-bottom">
+              <div class="title">Warum ist es rentabel für unseren Partner</div>
+            </div>
+            <div class="profit__subtitle scroll-hidden scroll-hidden-bottom">
+              <div class="subtitle">
+                Investitionen mit einer Zahlung von 60% pro Jahr anzuziehen
+              </div>
+            </div>
+            <div class="profit__items">
+              <div class="profit__item scroll-hidden">
+                <div class="profit__item-num --select">01</div>
+                <div class="profit__item-text">
+                  Die Projektmarge für den Entwickler beträgt 200 %. Er teilt mit dem Investor nur
+                  einen Teil seines Gewinns in Höhe von 60 %
+                </div>
+              </div>
+              <div class="profit__item scroll-hidden scroll-hidden-right">
+                <div class="profit__item-num --select">02</div>
+                <div class="profit__item-text">
+                  Der Bauträger erhält in kurzer Zeit die benötigte Menge, sodass er ohne
+                  Verzögerung mit dem Bau beginnen kann
+                </div>
+              </div>
+              <div class="profit__item scroll-hidden">
+                <div class="profit__item-num --select">03</div>
+                <div class="profit__item-text">
+                  Einnahmen werden aus dem Verkauf von Wohnungen in der Entwicklungsphase
+                  (Ausgrabung) gezahlt
+                </div>
+              </div>
+              <div class="profit__item scroll-hidden scroll-hidden-right">
+                <div class="profit__item-num --select">04</div>
+                <div class="profit__item-text">
+                  Die Verwendung von Kreditmitteln erlegt dem Entwickler bestimmte Einschränkungen
+                  auf und erlaubt keinen vorzeitigen Verkauf von Wohnungen
+                </div>
+              </div>
+            </div>
+            <div class="profit__desc scroll-hidden scroll-hidden-bottom">
+              <div class="desc desc--big">
+                <p class="--select">
+                  Das alles macht Immobilieninvestitionen in der Türkei zu einer der wichtigsten
+                  vielversprechende Investitionsbereiche in den Jahren 2023-2025
+                </p>
+              </div>
+            </div>
+            <div class="profit__btn scroll-hidden scroll-hidden-bottom">
+              <button class="btn modal__btn-active" data-modal-src="modal">
+                Lassen Sie sich beraten
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="profit__dec"><img src="img/profit/dec.png" alt="" /></div>
+      </section>
+
+      <section class="advantages">
+        <div class="container small">
+          <div class="advantages__wrapper">
+            <div class="advantages__content">
+              <div class="advantages__title">
+                <div class="title --select scroll-hidden">Welche Vorteile</div>
+              </div>
+              <div class="advantages__subtitle scroll-hidden">
+                <div class="subtitle">
+                  bietet die Teilnahme an einem Immobilienpool mit der Galaxy-Plattform?
+                </div>
+              </div>
+              <div class="advantages__desc scroll-hidden">
+                <p>
+                  <span
+                    >Indem Sie Ihr Anlagepaket mit diesem Instrument auffüllen, schaffen Sie sich
+                    eine verlässliche zusätzliche passive Einkommensquelle</span
+                  >
+                </p>
+                <p>
+                  Melden Sie sich für eine Beratung an, um mehr über die Vorteile einer solchen
+                  Investition zu erfahren
+                </p>
+              </div>
+              <div class="advantages__btn scroll-hidden">
+                <button class="btn modal__btn-active" data-modal-src="modal">
+                  Lassen Sie sich beraten
+                </button>
+              </div>
+            </div>
+            <div class="advantages__items">
+              <div class="advantages__item scroll-hidden scroll-hidden-right">
+                <p>Garantierte Rentabilität unter Smart Contract 5% pro Monat</p>
+              </div>
+              <div class="advantages__item scroll-hidden scroll-hidden-right">
+                <p>
+                  Monatliche Zahlungen ab dem ersten Teilnahme Monat – die Investition bringt Ihnen
+                  schnell passives Einkommen
+                </p>
+              </div>
+              <div class="advantages__item scroll-hidden scroll-hidden-right">
+                <p>Komfortabler Mindesteintrittsbetrag – ab 50 USDT oder 1 ENOT-Token</p>
+              </div>
+              <div class="advantages__item scroll-hidden scroll-hidden-right">
+                <p>
+                  Abgrenzung der Vergütung für das Staking (Einnahmen) innerhalb von 12 Monaten mit
+                  Rückgabe der Hinterlegungsstelle nach 13 Monaten
+                </p>
+              </div>
+              <div class="advantages__item scroll-hidden scroll-hidden-right">
+                <p>
+                  Möglichkeit, den Pool vorzeitig zu verlassen, indem Sie Ihren Anteil an einen
+                  anderen Partner übertragen oder den investierten Betrag abzüglich des gezahlten
+                  Gewinns abheben
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__dec"><img src="img/how/dec.png" alt="" /></div>
+      </section>
+
+      <section class="financing">
+        <div class="container small">
+          <div class="financing__wrapper">
+            <div class="list">
+              <div class="list__content">
+                <div class="financing__title scroll-hidden scroll-hidden-bottom">
+                  <div class="title">Wie ist der Prozess</div>
+                </div>
+                <div class="financing__subtitle scroll-hidden scroll-hidden-bottom">
+                  <div class="subtitle">
+                    der Projektfinanzierung und Einkommensgenerierung auf der Galaxy-Plattform?
+                  </div>
+                </div>
+                <div class="financing__items">
+                  <div class="list__items list__items--margin">
+                    <div class="list__item scroll-hidden scroll-hidden-right">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        Sie folgen dem Affiliate-Link und registrieren sich auf der
+                        Galaxy-Plattform. Es ist nicht notwendig, ein Teilnahmepaket in der
+                        Plattform zu kaufen
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-right">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        Kaufen Sie ENOT-Token in Höhe von 50 USDT (der Betrag muss ein Vielfaches
+                        von 50 USDT sein - die Kosten für einen Token)
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-right">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        Staking Ihrer Token. Dies ist eine Sperrung von Token in Ihrer Brieftasche
+                        für eine Gewinnperiode
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-right">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        С момента закрытия пула, 4 раза в месяц, проинвестированная вами сумма
+                        направляется нашему партнеру (ASGARD) для покупки земельного участка в
+                        Турции под застройку элитного комплекса недвижимости
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-right">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        Ab dem ersten Monaten der Teilnahme am Pool erhalten Sie einen Gewinn von 5%
+                        des investierten Betrags
+                      </div>
+                    </div>
+                    <div class="list__item scroll-hidden scroll-hidden-right">
+                      <div class="list__item-dec"></div>
+                      <div class="list__item-text">
+                        Nach 13 Monaten schließt der Pool und Sie erhalten eine 100% Rückerstattung
+                        des Pfandkörpers
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list__dec"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guarantees">
+        <div class="container big">
+          <div class="guarantees__wrapper">
+            <div class="guarantees__title"><div class="title">Vertrags Garantien</div></div>
+            <div class="guarantees__items swiper slider-1">
+              <div class="swiper-wrapper">
+                <div class="guarantees__item swiper-slide">
+                  <div class="guarantees__item-img">
+                    <img src="img/icon/arrow-circle.svg" alt="" />
+                  </div>
+                  <div class="guarantees__item-title">Smart Contract</div>
+                  <div class="guarantees__item-text guarantees__item-text--min">
+                    stellt sicher, dass die Einsatzbedingungen nicht geändert werden können
+                  </div>
+                </div>
+                <div class="guarantees__item swiper-slide">
+                  <div class="guarantees__item-img">
+                    <img src="img/icon/arrow-circle.svg" alt="" />
+                  </div>
+                  <div class="guarantees__item-title">Berichte</div>
+                  <div class="guarantees__item-text">Sie erhalten einen Baubericht in Echtzeit</div>
+                </div>
+                <div class="guarantees__item swiper-slide">
+                  <div class="guarantees__item-img">
+                    <img src="img/icon/arrow-circle.svg" alt="" />
+                  </div>
+                  <div class="guarantees__item-title">Land kaufen</div>
+                  <div class="guarantees__item-text">
+                    Alle Mittel fließen ausschließlich in den Kauf eines Grundstücks für den
+                    Wohnungsbau in der Türkei
+                  </div>
+                </div>
+                <div class="guarantees__item swiper-slide">
+                  <div class="guarantees__item-img">
+                    <img src="img/icon/arrow-circle.svg" alt="" />
+                  </div>
+                  <div class="guarantees__item-title">документы</div>
+                  <div class="guarantees__item-text">
+                    Как только земля будет куплена, вы увидите документы о ее приобретении
+                  </div>
+                </div>
+              </div>
+              <div class="guarantees__arrows">
+                <div class="guarantees__arrow guarantees__arrow-l">
+                  <img src="img/icon/arrow-l.svg" alt="" />
+                </div>
+                <div class="guarantees__arrow guarantees__arrow-r">
+                  <img src="img/icon/arrow-r.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="call">
+        <div class="container small">
+          <div class="call__wrapper">
+            <div class="call__content">
+              <div class="call__title scroll-hidden">
+                <div class="title --select">Beeilen Sie sich und investieren</div>
+              </div>
+              <div class="call__subtitle scroll-hidden">
+                <div class="subtitle">
+                  Sie mit der Galaxy-Plattform in einen Immobilienpool, um 5 % pro Monat auf
+                  Immobilien in der Türkei bei voller Haftung zu verdienen
+                </div>
+              </div>
+
+              <div class="call__desc scroll-hidden">
+                <p>
+                  Beeilen Sie sich, um sich beraten zu lassen – die Anzahl der Token zum Staking ist
+                  begrenzt und unverändert
+                </p>
+              </div>
+
+              <div class="call__btn scroll-hidden">
+                <button class="btn modal__btn-active" data-modal-src="modal">
+                  Lassen Sie sich beraten
+                </button>
+              </div>
+            </div>
+            <div class="call__img scroll-hidden scroll-hidden-right">
+              <img src="img/call/img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__info">
+              <div class="footer__title footer__title--margin">Rechtsinformation</div>
+              <div class="footer__info-text">
+                <p>
+                  Dieses Material ist kein Angebot, sondern soll Sie nur über die Möglichkeiten
+                  informieren.
+                </p>
+                <p>
+                  Galaxy Platform ist ein Marketingpartner von ASGARD und ist nicht für die
+                  gesammelten Mittel verantwortlich, da alle Zahlungen von der Muttergesellschaft
+                  des ASGARD-Projekts geleistet werden.
+                </p>
+                <p>
+                  Bevor Sie sich für eine Zusammenarbeit entscheiden, müssen Sie sich mit allen
+                  Bedingungen der Transaktion vertraut machen. Auf der Grundlage des Vorstehenden
+                  sollten Sie sich nicht ausschließlich auf dieses Material verlassen, anstatt eine
+                  unabhängige Analyse durchzuführen.
+                </p>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-item">
+                <div class="footer__title">Unterstützung</div>
+                <a href="mailto:support@platformgalaxy.com" class="footer__link"
+                  >support@platformgalaxy.com</a
+                >
+              </div>
+              <div class="footer__contacts-item">
+                <div class="footer__title">Soziales Netzwerk</div>
+                <a href="https://t.me/Turkey2023year" target="_blank" class="footer__link"
+                  ><div class="footer__link-icon"><img src="img/icon/telegram.svg" alt="" /></div>
+                  Navigationskanal</a
+                >
+              </div>
+            </div>
+            <div class="footer__logo"><img src="img/logo-footer.svg" alt="" /></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal__wrapper" data-modal-window="modal">
+      <div class="modal__content">
+        <div class="modal__btn-close">
+          <button class="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <form id="form" class="form" action="/" method="post">
+          <div class="form__title">Melden Sie sich für eine Beratung an</div>
+          <div class="form__text">und erhalten Sie Antworten auf alle Fragen um das Projekt</div>
+          <div class="form__inputs">
+            <div class="form__input-block">
+              <input type="hidden" value="" name="country-code" id="country-code" />
+              <input
+                type="text"
+                required
+                placeholder="Name"
+                name="name"
+                value=""
+                class="form__input val val-name"
+              />
+              <div class="form__input-text">Name falsch eingegeben</div>
+            </div>
+            <div class="form__input-block">
+              <input
+                type="text"
+                required
+                placeholder="Email"
+                name="email"
+                value=""
+                class="form__input val val-email"
+              />
+              <div class="form__input-text">E-Mail falsch eingegeben</div>
+            </div>
+            <div class="form__input-block">
+              <input
+                type="tel"
+                required
+                placeholder=""
+                name="phone"
+                value=""
+                class="form__input"
+                id="phone"
+              />
+              <div class="form__input-text" id="error-msg"></div>
+            </div>
+            <div class="form__input-block">
+              <input
+                type="text"
+                required
+                placeholder="Nick im Telegramm"
+                name="telegram"
+                value=""
+                class="form__input val val-telegram"
+              />
+              <div class="form__input-text">Telegramm-Spitzname falsch eingegeben</div>
+            </div>
+          </div>
+          <div class="form__btn"><button class="btn">Lassen Sie sich beraten</button></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/fslightbox.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
